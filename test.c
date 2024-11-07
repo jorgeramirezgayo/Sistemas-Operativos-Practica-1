@@ -27,11 +27,11 @@ int main (int argc, char *argv[]) {
         return 1;
     }
 
-    if (strcmp(argv[1] == "head") == 0) {
+    if (strcmp(argv[1], "head") == 0) {
         head(lines);
-    } else if (strcmp(argv[1] == "tail") == 0) {
+    } else if (strcmp(argv[1], "tail") == 0) {
         tail(lines);
-    } else if (strcmp(argv[1] == "longlines") == 0) {
+    } else if (strcmp(argv[1], "longlines") == 0) {
         longlines(lines);
     } else {
         fprintf(stderr, "Comando disponibles: [head|tail|longlines]\n");
